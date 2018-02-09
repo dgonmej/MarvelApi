@@ -1,0 +1,38 @@
+@font-face {
+  font-family: Maxwell-Regular;
+  src: url("../../fonts/Maxwell/Maxwell-REGULAR.ttf");
+}
+
+@font-face {
+  font-family: Maxwell-Bold;
+  src: url("../../fonts/Maxwell/Maxwell-BOLD.ttf");
+}
+
+@font-face {
+  font-family: Maxwell-Light;
+  src: url("../../fonts/Maxwell/Maxwell-LIGHT.ttf");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol, li, li a {
+  list-style: none;
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Código de JQUERY -->
+    <script src="assets/js/lib/jquery-3.3.1.min.js"></script>
+
+    <!-- Código de JQUERY UI -->
+    <script src="assets/js/lib/jquery-ui.min.js"></script>
+    <!-- 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
+
+    <!-- Enlaces de BOOTSTRAP -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css">
+
+    <!-- <script type="text/javascript" src="path_to/jquery.js"></script> -->
+    <script type="text/javascript" src="assets/js/lib/jquery.simplePagination.js"></script>
+    <link type="text/css" rel="stylesheet" href="assets/css/lib/simplePagination.css" />
+
+    <!-- Código javascript propio -->
+    <script src="assets/js/custom/main.js"></script>
+
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="assets/css/custom/main.css">
+    <link rel="stylesheet" href="assets/css/custom/header.css">
+    <link rel="stylesheet" href="assets/css/custom/body.css">
+    <link rel="stylesheet" href="assets/css/custom/footer.css">
+    <link rel="stylesheet" href="assets/css/custom/button.css">
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <title>Marvel API | Inicio</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid encabezado">
+                <!-- En la versión móvil se mostrará el nombre/icono del sitio y el botón de menú -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-desplegable" aria-expanded="false">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html" title="Inicio">
+                        <span class="texto-titulo">INICIO</span>
+                        <span class="glyphicon glyphicon-home"></span>
+                    </a>
+                </div>
+                <!-- Este es el contenido del menú que se despliega con el botón de menú-->
+                <div id="menu-desplegable" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="assets/portfolio/results.html" title="Resultados">
+                                <span class="glyphicon glyphicon-stats"></span>
+                                <span class="texto-menu">Resultados</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid contenedor">
+        <main>
+            <div class="contenido">
+                <div id="titulo">
+                    <img src="assets/img/logo.png" id="logo" title="Logo de Marvel" alt="Logo de Marvel" />
+                    <input id="toggleButton" type="checkbox" checked data-toggle="toggle" data-on="Ver comics" data-off="Ver personajes" data-onstyle="danger" data-offstyle="warning">
+                </div>
+                <div class="error">
+                    <h1 class="titulo-error">¡Lo sentimos, ha ocurrido un error al cargar la información!</h1>
+                    <img src="assets/img/error.png" alt="Error">
+                </div>
+                <img id="lupa" class="spinner" src="assets/img/spinner.svg" alt="Spinner">
+                <img id="marvel" class="spinner" src="assets/img/logo.gif" alt="Spinner">
+                <div id="comics" class="contenedor-elementos">
+                    <h2 class="titulo">Comics de Marvel</h2>
+                </div>
+                <div id="personajes" class="contenedor-elementos">
+                    <h2 class="titulo">Personajes de Marvel</h2>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div class="container-fluid pie">
+        <footer>
+            <div id="barra_bottom" class="row">
+                <div id="contenedor-legalidad" class="col-xs-12 col-md-5 col-md-offset-2">
+                    <ul id="legalidad">
+                        <li>
+                            <a href="http://www.legislacioninternet.com/ejemplo-aviso-legal/" title="Aviso legal">
+                                Aviso Legal
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.google.es/intl/es/policies/terms/regional.html" title="Condiciones">
+                                Condiciones
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.google.es/intl/es/policies/privacy/" title="Privacidad">
+                                Privacidad
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <span class="autor">
+                        <a href="#" title="Diego González" class="autor-nombre">&copy; 2018 Diego González</a>
+                    </span>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

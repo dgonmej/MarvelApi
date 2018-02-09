@@ -1,0 +1,75 @@
+.pie {
+  padding: 0;
+}
+
+footer {
+  margin: 0;
+  width: 100%;
+}
+
+#barra_bottom {
+  background-color: rgb(7, 19, 26);
+  color: #fff;
+  margin: 0;
+  padding: 1%;
+}
+
+#legalidad {
+  color: #777;
+  margin: 1.8% 5%;
+  padding: 0;
+}
+
+#legalidad li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+#legalidad li a {
+  color: #dad3d3;
+  font: 14px Arial, Helvetica, sans-serif;
+  text-decoration: underline;
+  transition: 0.4s;
+}
+
+.autor {
+  float: right;
+  color: #dad3d3;
+  font-family: Maxwell-Light, sans-serif;
+  font-size: 18px;
+  margin: 3% 0;
+  padding: 0;
+}
+
+.autor-nombre {
+  color: #bead87;
+  font-family: Maxwell-Regular, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  transition: 0.4s;
+}
+
+#contenedor-legalidad {
+  text-align: center;
+}
+
+#barra_bottom a:hover {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  footer {
+    margin: 0;
+  }
+
+  .autor {
+    width: 100%;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 1%;
+  }
+
+  .autor-nombre {
+    font-size: 1.2em;
+  }
+}

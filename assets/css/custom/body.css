@@ -1,0 +1,345 @@
+div.contenedor {
+  width: 100vw;
+  background-color: rgb(61, 61, 61);
+  margin: 0 auto;
+  padding: 0;
+}
+
+div.contenido {
+  width: 90vw;
+  min-height: 86vh;
+  margin: 2% auto 0 auto;
+  padding: 2% 4% 4%;
+  text-align: center;
+  background-color: lightgrey;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+
+div.contenido div#titulo {
+  width: 100%;
+  height: 20vh;
+  margin-bottom: 20px;
+  padding: 5px;
+  border-bottom: solid rgb(61, 61, 61) 4px;
+}
+
+div.contenido div#titulo #logo {
+  width: 40%;
+}
+
+div.contenido div#titulo .toggle {
+  float: right;
+  margin-top: 6%;
+  font-family: Maxwell-Bold, sans-serif;
+  text-transform: uppercase;
+
+  box-shadow: 4px 4px 8px #333;
+  transition: 0.2s box-shadow;
+}
+
+div.contenido div#titulo .toggle:hover {
+  box-shadow: 6px 6px 12px #333;
+}
+
+div.contenido h1.titulo {
+  font-family: Maxwell-Bold, sans-serif;
+  font-size: 3em;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px black;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: solid rgb(61, 61, 61) 4px;
+  flex-basis: 100%;
+}
+
+div.contenido #lupa {
+  position: absolute;
+  top: 45%;
+  z-index: 2;
+}
+
+div.contenido #marvel {
+z-index: 1;
+  filter: blur(2px);
+  border-radius: 15px;
+  box-shadow: 4px 4px 8px #000;
+}
+
+div.contenido h1.titulo-error {
+  font-family: Maxwell-Bold, sans-serif;
+  font-size: 3em;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px black;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  /* border-bottom: solid rgb(61, 61, 61) 4px; */
+  flex-basis: 100%;
+}
+
+.contenedor-elementos {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+
+.contenedor-elementos h2.titulo {
+  flex-basis: 100%;
+  font-family: Maxwell-Bold, sans-serif;
+  font-size: 2.2em;
+  text-transform: uppercase;
+  text-align: left;
+  text-shadow: 1px 1px 2px black;
+  margin: 10px 0 0;
+  padding: 5px;
+}
+
+.contenedor-elementos div {
+  width: 200px;
+  /* height: 400px; */
+  margin: 2%;
+  background-color: #303031;
+  border: solid rgb(36, 32, 32) 2px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px black;
+  transition: 0.2s box-shadow;
+  cursor: pointer;
+}
+
+.contenedor-elementos div:hover {
+  box-shadow: 18px 18px 20px black;
+  transform: scale(1.1);
+}
+
+.contenedor-elementos div:hover > .titulo {
+  color: rgb(252, 191, 122);
+}
+
+.contenedor-elementos div img {
+  width: 99%;
+  border: solid rgb(36, 32, 32) 0px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.contenedor-elementos div .titulo {
+  display: block;
+  color: lightgrey;
+  font-family: Maxwell-Regular, sans-serif;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px white;
+  margin: 10px 0;
+  padding: 5px;
+}
+
+div#formulario {
+  width: 40%;
+  padding: 1% 2%;
+}
+
+div#infoMarvel {
+  width: 60%;
+  padding: 1% 2%;
+  text-align: left;
+}
+
+div#infoMarvel #caratula {
+  width: 30%;
+  float: left;
+  padding: 4px;
+  background-color: lightgrey;
+  border-radius: 4px;
+  box-shadow: 4px 4px 18px #333;
+}
+
+div#infoMarvel #informacion {
+  width: 70%;
+  padding: 2% 3% 2% 4%;
+  float: right;
+}
+
+div#infoMarvel h3 {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+div#infoMarvel .enfasis {
+  font-weight: normal;
+}
+
+div#infoMarvel .botones {
+  width: 100%;
+  /* float: left; */
+  font-family: Maxwell-Regular, sans-serif;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+div.contenido form {
+  text-align: left;
+  font-family: Maxwell-Regular, sans-serif;
+}
+
+div.contenido .tituloCaja {
+  margin-bottom: 2%;
+  font-family: Maxwell-Bold, sans-serif;
+  text-align: left;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 2px #999;
+}
+
+div.contenido form label {
+  width: 44%;
+  margin: 2%;
+}
+
+div.contenido form label[for="opinion"] {
+  width: 93%;
+  margin: 2% 2%;
+}
+
+div.contenido form label span.texto-formulario {
+  display: block;
+  /* width: 20%; */
+  margin: 0 0 5px 8px;
+  font-size: 1.2em;
+  text-shadow: 1px 1px 2px #999;
+}
+
+div.contenido form label input {
+  width: 100%;
+  height: 30px;
+  padding: 4px 8px;
+  font-size: 1.1em;
+  border-radius: 10px;
+  background-color: rgba(238, 238, 237, 0.9);
+}
+
+div.contenido form label textarea {
+  width: 100%;
+  padding: 4px 8px;
+  resize: vertical;
+  font-size: 1.1em;
+  border-radius: 10px;
+  background-color: rgba(238, 238, 237, 0.9);
+}
+
+div.contenido form .botones {
+  text-align: center;
+  font-weight: bold;
+}
+
+div.contenido #contenedor-graficos {
+  width: 100%;
+  padding: 1%;
+}
+
+#graficos {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.grafico {
+  float: left;
+  width: 40%;
+  /* height: 350px; */
+  margin: 0 auto;
+}
+
+svg {
+  border-radius: 20px; 
+  box-shadow: 8px 8px 12px #999;
+}
+
+div.triple {
+  border-radius: 15px;
+  width: 40%;
+  margin: 2% auto 4% auto;
+}
+div.triple button {
+  margin: 0;
+  padding: 2%;
+  width: calc(100% / 3);
+  font-size: 1.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: rgb(14, 38, 51);
+  border: solid rgb(12, 29, 37) 2px;
+  /* border-top-left-radius:  */
+  box-shadow: 2px 2px 5px #999;
+}
+
+div.triple button:hover {
+  background-color: rgb(34, 53, 63);
+  box-shadow: 4px 4px 5px #999;
+}
+
+div.triple button.seleccionado {
+  background-color: rgb(31, 81, 104);
+  border: solid rgb(18, 51, 66) 2px;
+}
+
+div.triple button img {
+  /* width: 30%; */
+  height: 30px;
+  color: rgb(87, 72, 33);
+}
+
+div.triple button:first-child {
+  border-right: 0px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+div.triple button:last-child {
+  border-left: 0px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+div.contenido .botones {
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  div.contenido {
+    width: 94vw;
+    margin: 12% auto 0 auto;
+    text-align: center;
+    background-image: none;
+  }
+
+  div#informacion,
+  div#formulario {
+    width: 100%;
+  }
+
+  div#informacion #caratula {
+    width: 100%;
+    margin: 8% 0;
+  }
+
+  div#informacion #informacion {
+    width: 100%;
+  }
+
+  div#informacion .botones {
+    text-align: center;
+  }
+
+  div.contenido form {
+    width: 100%;
+    padding: 1% 4%;
+    text-align: left;
+  }
+
+  div.contenido form label span.texto-formulario {
+    width: 45%;
+    font-size: 1.1em;
+    text-shadow: 1px 1px 2px #999;
+  }
+}

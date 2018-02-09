@@ -1,0 +1,33 @@
+div.encabezado {
+  background-color: rgb(7, 19, 26);
+}
+
+.texto-titulo {
+  font-family: Maxwell-Bold, sans-serif;
+  font-size: 1.2em;
+  transition: 0.2s;
+  color: goldenrod;
+}
+
+.texto-titulo:hover {
+  color: rgb(242, 207, 119);
+}
+
+.texto-menu {
+  font-family: Maxwell-Bold, sans-serif;
+  font-size: 1.1em;
+  transition: 0.1s;
+  color: goldenrod;
+}
+
+.texto-menu:hover {
+  color: rgb(242, 207, 119);
+}
+
+.glyphicon {
+  color: rgb(242, 207, 119);
+}
+
+.glyphicon:hover ~ .texto-menu {
+  color: rgb(242, 207, 119);
+}
